@@ -1,0 +1,41 @@
+body {
+    main {
+        .col-md-9 {
+            margin-bottom: 0;
+        }
+        .horaires {
+            margin-top: 2em;
+        }
+
+        .aside {
+            padding: 0 1.3em;
+            margin-bottom: 4em;
+
+            h4 {
+                padding-left: 1.3em;
+            }
+
+            ul {
+                padding: 0;
+                margin-left: 2em;
+            }
+
+            a {
+                i {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .temoignages {
+            h2 {
+                padding: 0 0 0 2em;
+                margin: 2em 0 0 0;
+            }
+
+            article {
+                margin: 1.5em 4.5em;
+            }
+        }
+    }
+}

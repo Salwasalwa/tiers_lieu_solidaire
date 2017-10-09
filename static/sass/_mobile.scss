@@ -1,0 +1,94 @@
+body {
+
+    header {
+        .navbar {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        #menu-item-29 > a,
+        #menu-item-30 > a {
+            color: white;
+            background-color: transparent;
+        }
+
+        #menu-item-29 > a:hover,
+        #menu-item-30 > a:hover {
+            color: $color-flash;
+            background-color: transparent;
+        }
+
+    }
+    main {
+        .detail_formation,
+        .espace_content {
+            article {
+                figure {
+                    text-align: center;
+                    img {
+                        float: none;
+                        width: 90%;
+                        height: 100%;
+                    }
+                    img:hover {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .horaires {
+                    margin-top: 1em;
+                }
+            }
+        }
+
+        .formation_atelier {
+            article {
+                figure {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    img:hover {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .article_materiel {
+            flex-direction: column;
+
+            figure {
+                order: 1;
+            }
+        }
+
+        .evenements {
+            article {
+                img {
+                    height: auto;
+                }
+            }
+        }
+
+        .temoignages {
+            h2 {
+                padding: 0 0 0 2em;
+                margin: 0;
+            }
+
+            article {
+                margin: 1.5em 4.5em;
+            }
+        }
+    }
+
+    footer {
+        form {
+            input {
+                width: 15em;
+            }
+        }
+    }
+}
