@@ -9,6 +9,7 @@ function add_theme_scripts() {
 
     wp_enqueue_script('jquery_script', get_template_directory_uri().'/static/external/jquery/dist/jquery.min.js', true);
     wp_enqueue_script('bootstrap_script', get_template_directory_uri().'/static/external/bootstrap/dist/js/bootstrap.min.js', true);
+    
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 

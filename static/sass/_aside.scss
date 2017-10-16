@@ -1,0 +1,54 @@
+body {
+    .aside {
+        text-align: left;
+        padding-top: 4em;
+
+        h4 {
+            font-family: $font-title;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 1em 0 0 0;
+            margin-top: 2em;
+            color: $color-dark;
+
+            a {
+                color: $color-dark;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0 0 0 0;
+            a {
+                text-decoration: none;
+                color: $color-dark;
+
+                li {
+                    font-family: $font-index;
+                    font-size: 17px;
+                    border-bottom: 1px solid gray;
+                    padding: 0.5em;
+                }
+
+                li:hover {
+                    color: white;
+                    background-color: gray;
+
+                }
+            }
+        }
+        // Icon agenda aside
+        a {
+            text-decoration: none;
+            color: black;
+            i {
+                font-size: 7em;
+                margin: 0.5em 0;
+            }
+        }
+
+        a:hover {
+            color: gray;
+        }
+    }
+}

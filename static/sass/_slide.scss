@@ -1,0 +1,44 @@
+body {
+    // Slider page accuiel
+    .slide_header {
+        border-style: solid;
+        border-width: 0 10px 15px 0;
+        border-image: url(/static/img/tweed.png);
+
+        img {
+            width: 100%;
+            max-height: 250px;
+            min-height: 250px;
+        }
+
+        .mllorange {
+            display: flex;
+            img {
+                width: 50%;
+            }
+        }
+
+        .carousel-caption {
+            font-family: $font-index;
+
+            h3 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+        }
+        .carousel-indicators {
+            li {
+                border-color: $color-flash;
+            }
+
+            .active {
+                background-color: $color-flash;
+            }
+        }
+    }
+}

@@ -13,11 +13,11 @@ get_header();
         <div class="row ">
             <div class="col-md-9 text-justify">
                 <div class="espace_content">
-                    
+
                     <?php get_template_part( 'template-parts/content_loop_detailevenements');?>
                 </div>
             </div>
-            <div class="col-md-3 hidden-xs">
+            <div class="col-md-3">
                 <?php get_sidebar(); ?>
             </div>
         </div>

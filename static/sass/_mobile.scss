@@ -19,8 +19,20 @@ body {
 
     }
     main {
+        .col-md-9 {
+            padding: 0 1em;
+        }
+
+        // Evenements, Formation & Atelier, derniers articles, partenaire.
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .detail_formation,
         .espace_content {
+
             article {
                 figure {
                     text-align: center;
@@ -34,24 +46,13 @@ body {
                         height: 100%;
                     }
                 }
+
+                p {
+                    margin-top: 2em;
+                }
+
                 .horaires {
                     margin-top: 1em;
-                }
-            }
-        }
-
-        .formation_atelier {
-            article {
-                figure {
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-
-                    img:hover {
-                        width: 100%;
-                        height: 100%;
-                    }
                 }
             }
         }
@@ -64,14 +65,6 @@ body {
             }
         }
 
-        .evenements {
-            article {
-                img {
-                    height: auto;
-                }
-            }
-        }
-
         .temoignages {
             h2 {
                 padding: 0 0 0 2em;
@@ -80,6 +73,23 @@ body {
 
             article {
                 margin: 1.5em 4.5em;
+            }
+        }
+
+        .aside {
+            padding-top: 0;
+        }
+    }
+
+    .accuiel {
+        .facebook {
+            padding-left: 2em;
+        }
+
+        .partenaires {
+            img {
+                width: 6em;
+                height: 4em;
             }
         }
     }

@@ -6,6 +6,7 @@
         Espace Fablab
         Média-Lab
         À propos
+        Mention Légales
 
         template-parts-> content_loop_post.
     */
@@ -17,30 +18,30 @@ get_header();
     <main>
         <?php if (get_the_ID()== 6) : ?>
             <!-- Page Salle Multimedia -->
-            <div class="row">
+            <div class="row hidden-xs">
                 <div class="col-md-12 img_espace">
-                    <img src="http://placehold.it/1200x300" alt="salle_multimedia">
+                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/tiers.jpg" alt="salle_multimedia">
                 </div>
             </div>
         <?php elseif (get_the_ID()== 10 ): ?>
             <!-- Page Co-working -->
-            <div class="row">
+            <div class="row hidden-xs">
                 <div class="col-md-12 img_espace">
-                    <img src="http://placehold.it/1200x300" width="1200" height="300" alt="salle_multimedia">
+                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/9.jpg" width="1200" height="300" alt="salle_multimedia">
                 </div>
             </div>
         <?php elseif (get_the_ID()== 12 ): ?>
             <!-- Page Fablab -->
-            <div class="row">
+            <div class="row hidden-xs">
                 <div class="col-md-12 img_espace">
-                    <img src="http://placehold.it/1200x300" alt="salle_multimedia">
+                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/1.jpg" alt="salle_multimedia">
                 </div>
             </div>
         <?php elseif (get_the_ID()== 14 ): ?>
             <!-- Page MediaLab -->
-            <div class="row">
+            <div class="row hidden-xs">
                 <div class="col-md-12 img_espace">
-                    <img src="http://placehold.it/1200x300" alt="salle_multimedia">
+                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/6.jpg" alt="salle_multimedia">
                 </div>
             </div>
         <?php endif; ?>
@@ -50,8 +51,8 @@ get_header();
                     <?php get_template_part( 'template-parts/content_loop_post');?>
                 </div>
             </div>
-            <div class="col-md-3 hidden-xs">
-                
+            <div class="col-md-3">
+
                 <?php get_sidebar(); ?>
             </div>
         </div>

@@ -1,10 +1,12 @@
+<div class="flex">
+
 <?php
 foreach ($posts as $post) {
     setup_postdata($post);
     $tags = wp_get_post_tags($post->ID);
     ?>
     <div class="col-md-4 col-sm-6">
-        <article class="">
+        <article>
             <a href="<?php the_permalink(); ?>">
                 <figure>
                     <?php the_post_thumbnail(); ?>
@@ -22,3 +24,4 @@ foreach ($posts as $post) {
     </div>
 
 <?php } ?>
+</div>

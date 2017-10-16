@@ -1,0 +1,17 @@
+body {
+    // articles de materiel fablab
+    .article_materiel {
+        display: flex;
+        padding: 2em;
+
+        article, img {
+            padding: 1em;
+        }
+
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+}

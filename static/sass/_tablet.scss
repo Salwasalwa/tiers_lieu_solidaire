@@ -3,8 +3,14 @@ body {
         .col-md-9 {
             margin-bottom: 0;
         }
+
         .horaires {
             margin-top: 2em;
+        }
+
+
+        .partenaires {
+            min-height: 32em;
         }
 
         .aside {
@@ -36,6 +42,12 @@ body {
             article {
                 margin: 1.5em 4.5em;
             }
+        }
+    }
+
+    .accuiel {
+        .facebook {
+            padding-left: 2em;
         }
     }
 }

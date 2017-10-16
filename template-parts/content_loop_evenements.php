@@ -6,6 +6,7 @@
     );
     $posts = get_posts($args);
 ?>
+<div class="flex">
 <?php
     foreach ($posts as $post) {
         setup_postdata( $post );
@@ -15,7 +16,7 @@
                 <article>
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail(); ?>
-                        <h3 class=""><?php the_title(); ?></h3>
+                        <h3><?php the_title(); ?></h3>
                     </a>
 
                 </article>
@@ -24,3 +25,4 @@
         <?php
     }
 ?>
+</div>

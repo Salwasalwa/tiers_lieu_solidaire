@@ -1,13 +1,13 @@
 <?php
     $recentPosts = new WP_Query( array(
         'category_name' => "evenements",
-        'showposts' => 8
+        'showposts' => 4
     ));
 ?>
-<div class="derniers_articles">
+<div class="derniers_articles flex">
     <?php while ($recentPosts->have_posts()): $recentPosts->the_post();?>
-        <div class="col-md-3 col-sm-6">
-            <article class="">
+        <div class="col-md-12 col-sm-6">
+            <article>
                 <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail(); ?>
                     <h3><?php the_title(); ?></h3>

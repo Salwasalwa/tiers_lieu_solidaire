@@ -13,7 +13,7 @@ get_header();
                     <?php get_template_part( 'template-parts/content_loop_evenements');?>
                 <?php endif ?>
             </div>
-            <div class="col-md-3 hidden-xs">
+            <div class="col-md-3">
                 <?php get_sidebar(); ?>
             </div>
         </div>
