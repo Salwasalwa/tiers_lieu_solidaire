@@ -5,11 +5,12 @@ foreach ($posts as $post) {
     ?>
         <p><?php the_title(); ?></p>
         <p>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>Adresse :
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
             <?php
             echo get_post_meta($post->ID, 'Adresse', true);
             ?>
         </p>
+        
         <p>
             <i class="fa fa-phone" aria-hidden="true"></i>Tél :
             <?php

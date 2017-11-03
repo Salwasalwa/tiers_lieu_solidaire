@@ -7,7 +7,7 @@
         Média-Lab
         À propos
         Mention Légales
-
+        Maison Digitale
         template-parts-> content_loop_post.
     */
 ?>
@@ -44,6 +44,13 @@ get_header();
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/6.jpg" alt="salle_multimedia">
                 </div>
             </div>
+        <?php elseif (get_the_ID()== 261 ): ?>
+            <!-- Page Maison Digitale -->
+            <div class="row hidden-xs">
+                <div class="col-md-12 img_espace">
+                    <!-- <img src= "<?php #echo get_bloginfo( 'template_directory' ); ?>/static/img/6.jpg" alt="Maison_Digitale"> -->
+                </div>
+            </div>
         <?php endif; ?>
         <div class="row ">
             <div class="col-md-9 text-justify">
@@ -51,8 +58,8 @@ get_header();
                     <?php get_template_part( 'template-parts/content_loop_post');?>
                 </div>
             </div>
-            <div class="col-md-3">
 
+            <div class="col-md-3">
                 <?php get_sidebar(); ?>
             </div>
         </div>

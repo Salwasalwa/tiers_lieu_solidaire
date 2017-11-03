@@ -6,7 +6,7 @@
 	));
 	?>
 	<div class="col-md-12 col-sm-6">
-		<h4><a href="/project_tiers_lieu/tiers_lieu_solidaire_wordpress/index.php/evenements/">Evenements</a></h4>
+		<h4><a href="<?php bloginfo('url');?>/index.php/evenements/">Evenements</a></h4>
 		<ul>
 			<?php while ($recentPostsEven->have_posts()): $recentPostsEven->the_post();?>
 				<a href="<?php the_permalink(); ?>"><li><?php the_title(); ?></li></a>

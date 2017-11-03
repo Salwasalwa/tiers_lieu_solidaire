@@ -33,6 +33,10 @@ body {
                 color: $color-flash;
                 background-color: transparent;
             }
+
+            #menu-item-29 {
+                padding-bottom: 15px;
+            }
         }
 
         .navbar-default {
@@ -43,6 +47,7 @@ body {
                     background-color: $background-navBar-footer;
                     color: $color-flash;
                 }
+
                 .active > a,
                 .active > a:focus,
                 .active > a:hover {

@@ -1,6 +1,6 @@
 body {
-    // Pade d'accuiel. Index
-    .accuiel {
+    // Pade d'accueil. Index
+    .accueil {
         background-color: $background-container;
         text-align: justify;
 
@@ -24,8 +24,6 @@ body {
 
         .tiers_lieu {
             font-family: $font-index;
-            letter-spacing: 0.5px;
-            line-height: 2em;
             font-style: italic;
             box-shadow: -5px -6px 7px 5px $color-flash, 0 5px 5px -5px $color-flash;
             margin-top: 4em;
@@ -35,12 +33,11 @@ body {
                 margin: 2em;
 
                 h2 {
-                    font-size: 32px;
-                    font-weight: 600;
+                    @include titre(32px, 600);
                     text-align: center;
-                    line-height: 1.5;
+                    border: none;
                     padding-top: 1em;
-                    margin: 2em 0 0 1em;
+                    margin-top: 2em;
                 }
             }
         }
@@ -52,12 +49,14 @@ body {
         }
 
         .partenaires {
+            text-align: center;
             padding-top: 4em;
             img {
-                width: 13em;
-                height: 8em;
+                width: 8em;
+                height: 7em;
             }
         }
+
         .nopadding {
            padding-left: 0;
            padding-right: 0;

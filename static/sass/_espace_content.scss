@@ -1,22 +1,24 @@
 body {
     //articles de :  Salle Multimedia, Fablab, Media-lab, Co-working.
     // detail formation
+    // detail événement
     // A propos
+    // Mentions Légales
+    
     .detail_formation,
     .espace_content {
-        margin-top: 1em;
-        padding: 1em;
+        margin-top: 0.5em;
+        padding: 0.5em;
 
         article {
             box-shadow: 8px 8px 12px #aaa;
+            height: auto;
             padding: 1em 2em;
 
             h2 {
-                font-family: $font-title;
-                font-weight: 400;
-                padding-bottom: 1em;
+                @include titre(32px, 400);
+                margin-bottom: 1em;
             }
-
 
             figure {
                 img {
@@ -24,23 +26,25 @@ body {
                     width: 300px;
                     height: 200px;
                     margin-right: 1em;
+                    @include transition;
                 }
 
                 img:hover {
-                    width: 50%;
-                    height: 50%;
-
+                    transform: scale(1.1);
                 }
             }
 
-            p {
+            .partenaire {
+                text-align: center;
+
                 img {
                     text-align: center;
-                    width: 13em;
-                    height: 8em;
+                    width: 8em;
+                    height: 7em;
                     padding: 0.5em 0 0 0.5em;
                 }
             }
+
             .horaires {
                 font-size: 20px;
                 padding: 1em 0;

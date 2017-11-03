@@ -7,10 +7,9 @@ body {
 
         //Titre Footer : Contact, Horaires, Liens Utils, Partenaire, Newsletter, follow us.
         h3 {
+            @include titre(13px, 100);
             text-transform: uppercase;
-            font-family: $font-title;
-            font-size: 13px;
-            font-weight: 100;
+            border: none;
             padding-bottom: 0.5em;
 
             i {
@@ -21,17 +20,18 @@ body {
 
         p {
             padding-left: 1.7em;
+
             i {
                 margin-right: 0.7em;
             }
         }
 
-
-        #nav_social {
+        #menu-social {
             display: flex;
             list-style-type: none;
             padding: 0;
             margin-left: 1.7em;
+
             li {
                 padding: 0;
                 margin-right: 0.3em;
@@ -46,9 +46,11 @@ body {
                         border-radius: 50%;
                         padding: 0.5em;
                     }
+
                     .fa-facebook {
                         padding: 0.5em 0.79em;
                     }
+
                     i:hover {
                         background-color: $color-flash;
                     }
@@ -62,12 +64,15 @@ body {
             .col-sm-6 {
                 padding-left: 0;
             }
+
             ul {
                 list-style-type: none;
                 padding: 0;
+
                 li {
                     padding-bottom: 0.5em;
                     margin-left: 1.5em;
+
                     a:focus,
                     a {
                         color: white;
@@ -97,12 +102,12 @@ body {
             input {
                 color: black;
                 width: 90%;
+                padding: 0.3em;
                 margin-bottom: 0.5em;
             }
 
             button {
                 @include buttont ($color-flash, $color-flash);
-                text-transform: uppercase;
                 margin-bottom: 1em;
             }
         }
@@ -115,7 +120,7 @@ body {
             p {
                 padding: 1em;
                 margin: 0;
-                
+
                 a:focus,
                 a {
                     color: white;

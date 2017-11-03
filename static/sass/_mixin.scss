@@ -1,0 +1,25 @@
+
+@mixin titre ($size, $weight) {
+    font-family: $font-title;
+    font-size: $size;
+    font-weight: $weight;
+    border-left: 15px solid $color-flash;
+    padding-left: 0.5em;
+}
+
+@mixin buttont ($back, $border) {
+    text-transform: uppercase;
+    color : white;
+    background-color: $back;
+    border-radius: 5px;
+    border : 1px solid $border;
+    padding: 0.5em 1em;
+}
+
+@mixin transition {
+    position: relative;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}

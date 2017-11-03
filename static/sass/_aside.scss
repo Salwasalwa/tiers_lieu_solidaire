@@ -1,17 +1,19 @@
 body {
     .aside {
+        letter-spacing: 0.5px;
+        line-height: 1.5;
         text-align: left;
-        padding-top: 4em;
+        padding-top: 1em;
 
         h4 {
-            font-family: $font-title;
-            font-size: 20px;
-            font-weight: 700;
+            @include titre(20px, 700);
+            color: $color-dark;
+            border: none;
             padding: 1em 0 0 0;
             margin-top: 2em;
-            color: $color-dark;
 
             a {
+                text-decoration: none;
                 color: $color-dark;
             }
         }
@@ -19,6 +21,7 @@ body {
         ul {
             list-style-type: none;
             padding: 0 0 0 0;
+
             a {
                 text-decoration: none;
                 color: $color-dark;
@@ -33,17 +36,7 @@ body {
                 li:hover {
                     color: white;
                     background-color: gray;
-
                 }
-            }
-        }
-        // Icon agenda aside
-        a {
-            text-decoration: none;
-            color: black;
-            i {
-                font-size: 7em;
-                margin: 0.5em 0;
             }
         }
 

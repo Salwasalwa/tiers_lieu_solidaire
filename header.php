@@ -20,7 +20,7 @@
             <?php require_once('wp-bootstrap-navwalker.php'); ?>
 
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <a class="navbar-brand" href="/project_tiers_lieu/tiers_lieu_solidaire_wordpress/">Tiers Lieu Solidaire</a>
+                <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Tiers Lieu Solidaire</a>
 
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">

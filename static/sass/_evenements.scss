@@ -4,7 +4,7 @@ body {
 
         .col-md-4,
         .col-md-3,
-        .col-sm-6, {
+        .col-sm-6 {
             padding-right: 0;
         }
 
@@ -13,15 +13,14 @@ body {
         }
 
         h2 {
-            font-family: $font-title;
-            font-weight: 400;
-            margin: 1.5em 1em;
+            @include titre(32px, 400);
+            margin: 0 0 1em 0.5em;
         }
 
         article {
             position: relative;
             margin-bottom: 1.5em;
-
+            @include transition;
 
             a {
                 text-decoration: none;
@@ -31,7 +30,9 @@ body {
             }
 
             h3 {
+                @include titre(24px, 400);
                 background: transparent;
+                border: none;
                 position: absolute;
                 width: 100%;
                 left: 0;
@@ -39,24 +40,22 @@ body {
             }
 
             img {
-                width: 90%;
+                width: 100%;
                 height: 9em;
             }
         }
 
         article:hover {
             background-color: $color-flash;
+            transform: scale(1.1);
 
             h3, p {
                 color: #fff;
             }
 
             img:hover {
-                width: 100%;
-                background: #000000;
-                opacity: 0.1;
+                opacity: 0.5;
             }
-
         }
     }
 }

@@ -1,7 +1,0 @@
-@mixin buttont ($back, $border) {
-    background-color: $back;
-    color : white;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    border : 1px solid $border;
-}

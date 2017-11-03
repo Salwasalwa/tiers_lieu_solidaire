@@ -1,8 +1,9 @@
+@charset "UTF-8";
 /**
  * The Header template for our theme
 
 Theme Name: tier-lieu-solidaire
-Author: Salwa
+Author: OSalwa // Mission Locale Lozère
 Description: Theme Tier-Lieu-Solidaire.
 Version: 1.0
 */
@@ -35,6 +36,9 @@ body header .dropdown-menu {
   body header .dropdown-menu .dropdown-menu > li > a:hover {
     color: #F18F01;
     background-color: transparent; }
+  body header .navbar-default #menu-item-29,
+  body header .dropdown-menu #menu-item-29 {
+    padding-bottom: 15px; }
 body header .navbar-default .navbar-nav .open > a,
 body header .navbar-default .navbar-nav .open > a:focus,
 body header .navbar-default .navbar-nav .open > a:hover {
@@ -57,10 +61,13 @@ body footer {
   color: white;
   padding: 0 1em 0; }
   body footer h3 {
-    text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-size: 13px;
     font-weight: 100;
+    border-left: 15px solid #F18F01;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+    border: none;
     padding-bottom: 0.5em; }
     body footer h3 i {
       color: #F18F01;
@@ -69,25 +76,25 @@ body footer {
     padding-left: 1.7em; }
     body footer p i {
       margin-right: 0.7em; }
-  body footer #nav_social {
+  body footer #menu-social {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin-left: 1.7em; }
-    body footer #nav_social li {
+    body footer #menu-social li {
       padding: 0;
       margin-right: 0.3em; }
-      body footer #nav_social li a {
+      body footer #menu-social li a {
         text-decoration: none; }
-        body footer #nav_social li a i {
+        body footer #menu-social li a i {
           font-size: 100%;
           background-color: #4C5760;
           color: white;
           border-radius: 50%;
           padding: 0.5em; }
-        body footer #nav_social li a .fa-facebook {
+        body footer #menu-social li a .fa-facebook {
           padding: 0.5em 0.79em; }
-        body footer #nav_social li a i:hover {
+        body footer #menu-social li a i:hover {
           background-color: #F18F01; }
   body footer .menu-liens_utils-container .col-md-12,
   body footer .menu-liens_utils-container .col-sm-6,
@@ -121,14 +128,15 @@ body footer {
     body footer form input {
       color: black;
       width: 90%;
+      padding: 0.3em;
       margin-bottom: 0.5em; }
     body footer form button {
-      background-color: #F18F01;
+      text-transform: uppercase;
       color: white;
-      padding: 0.5em 1em;
+      background-color: #F18F01;
       border-radius: 5px;
       border: 1px solid #F18F01;
-      text-transform: uppercase;
+      padding: 0.5em 1em;
       margin-bottom: 1em; }
   body footer .mentions {
     font-size: 11px;
@@ -144,16 +152,22 @@ body footer {
         border: #F18F01; }
 
 body .aside {
+  letter-spacing: 0.5px;
+  line-height: 1.5;
   text-align: left;
-  padding-top: 4em; }
+  padding-top: 1em; }
   body .aside h4 {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-weight: 700;
+    border-left: 15px solid #F18F01;
+    padding-left: 0.5em;
+    color: #4C5760;
+    border: none;
     padding: 1em 0 0 0;
-    margin-top: 2em;
-    color: #4C5760; }
+    margin-top: 2em; }
     body .aside h4 a {
+      text-decoration: none;
       color: #4C5760; }
   body .aside ul {
     list-style-type: none;
@@ -169,29 +183,33 @@ body .aside {
       body .aside ul a li:hover {
         color: white;
         background-color: gray; }
-  body .aside a {
-    text-decoration: none;
-    color: black; }
-    body .aside a i {
-      font-size: 7em;
-      margin: 0.5em 0; }
   body .aside a:hover {
     color: gray; }
 
-body .temoignages .col-md-12,
-body .temoignages .col-sm-6 {
-  padding-left: 0; }
-body .temoignages h2 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  padding: 1em 0 0 0;
-  margin-top: 2em; }
-body .temoignages article {
-  border-left: 3px solid grey;
-  padding: 0 1.5em;
-  margin: 2em 0.5em; }
-  body .temoignages article .temoignage_nom i {
-    margin-right: 0.5em; }
+body .temoignages {
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin-top: 1em; }
+  body .temoignages .col-md-12,
+  body .temoignages .col-sm-6 {
+    padding-left: 0; }
+  body .temoignages h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    border-left: 15px solid #F18F01;
+    padding-left: 0.5em;
+    border: none;
+    padding: 1em 0 0 0;
+    margin-top: 2em; }
+  body .temoignages blockquote {
+    font-size: 14.5px !important; }
+  body .temoignages article {
+    border-left: 3px solid grey;
+    padding: 0 1.5em;
+    margin: 2em 0.5em; }
+    body .temoignages article .temoignage_nom i {
+      margin-right: 0.5em; }
 
 body .slide_header {
   border-style: solid;
@@ -201,65 +219,69 @@ body .slide_header {
     width: 100%;
     max-height: 250px;
     min-height: 250px; }
-  body .slide_header .mllorange {
+  body .slide_header .flex_img {
     display: flex; }
-    body .slide_header .mllorange img {
+    body .slide_header .flex_img img {
       width: 50%; }
   body .slide_header .carousel-caption {
     font-family: "Source Sans Pro", sans-serif; }
-    body .slide_header .carousel-caption h3 {
-      font-size: 3rem;
-      font-weight: 700; }
+    body .slide_header .carousel-caption h3,
     body .slide_header .carousel-caption p {
-      font-size: 2.5rem;
-      font-weight: 700; }
+      font-family: "Oswald", sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      border-left: 15px solid #F18F01;
+      padding-left: 0.5em;
+      border: none; }
   body .slide_header .carousel-indicators li {
     border-color: #F18F01; }
   body .slide_header .carousel-indicators .active {
     background-color: #F18F01; }
 
-body .accuiel {
+body .accueil {
   background-color: #FAFAFF;
   text-align: justify; }
-  body .accuiel .row {
+  body .accueil .row {
     margin-left: 0;
     margin-right: 0; }
-  body .accuiel .facebook {
+  body .accueil .facebook {
     background-color: #FAFAFF;
     max-height: 265px;
     border-bottom: 15px solid;
     border-image: url(/static/img/tweed.png); }
-    body .accuiel .facebook iframe {
+    body .accueil .facebook iframe {
       width: 100%;
       padding-top: 1.4em;
       height: auto; }
-  body .accuiel .tiers_lieu {
+  body .accueil .tiers_lieu {
     font-family: "Source Sans Pro", sans-serif;
-    letter-spacing: 0.5px;
-    line-height: 2em;
     font-style: italic;
     box-shadow: -5px -6px 7px 5px #F18F01, 0 5px 5px -5px #F18F01;
     margin-top: 4em; }
-    body .accuiel .tiers_lieu article {
+    body .accueil .tiers_lieu article {
       padding-bottom: 4em;
       margin: 2em; }
-      body .accuiel .tiers_lieu article h2 {
+      body .accueil .tiers_lieu article h2 {
+        font-family: "Oswald", sans-serif;
         font-size: 32px;
         font-weight: 600;
+        border-left: 15px solid #F18F01;
+        padding-left: 0.5em;
         text-align: center;
-        line-height: 1.5;
+        border: none;
         padding-top: 1em;
-        margin: 2em 0 0 1em; }
-  body .accuiel .derniers_articles {
+        margin-top: 2em; }
+  body .accueil .derniers_articles {
     width: 90%;
     padding-top: 4em;
     margin-left: 5%; }
-  body .accuiel .partenaires {
+  body .accueil .partenaires {
+    text-align: center;
     padding-top: 4em; }
-    body .accuiel .partenaires img {
-      width: 13em;
-      height: 8em; }
-  body .accuiel .nopadding {
+    body .accueil .partenaires img {
+      width: 8em;
+      height: 7em; }
+  body .accueil .nopadding {
     padding-left: 0;
     padding-right: 0; }
 
@@ -269,33 +291,44 @@ body .img_espace img {
 
 body .detail_formation,
 body .espace_content {
-  margin-top: 1em;
-  padding: 1em; }
+  margin-top: 0.5em;
+  padding: 0.5em; }
   body .detail_formation article,
   body .espace_content article {
     box-shadow: 8px 8px 12px #aaa;
+    height: auto;
     padding: 1em 2em; }
     body .detail_formation article h2,
     body .espace_content article h2 {
       font-family: "Oswald", sans-serif;
+      font-size: 32px;
       font-weight: 400;
-      padding-bottom: 1em; }
+      border-left: 15px solid #F18F01;
+      padding-left: 0.5em;
+      margin-bottom: 1em; }
     body .detail_formation article figure img,
     body .espace_content article figure img {
       float: left;
       width: 300px;
       height: 200px;
-      margin-right: 1em; }
+      margin-right: 1em;
+      position: relative;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out; }
     body .detail_formation article figure img:hover,
     body .espace_content article figure img:hover {
-      width: 50%;
-      height: 50%; }
-    body .detail_formation article p img,
-    body .espace_content article p img {
-      text-align: center;
-      width: 13em;
-      height: 8em;
-      padding: 0.5em 0 0 0.5em; }
+      transform: scale(1.1); }
+    body .detail_formation article .partenaire,
+    body .espace_content article .partenaire {
+      text-align: center; }
+      body .detail_formation article .partenaire img,
+      body .espace_content article .partenaire img {
+        text-align: center;
+        width: 8em;
+        height: 7em;
+        padding: 0.5em 0 0 0.5em; }
     body .detail_formation article .horaires,
     body .espace_content article .horaires {
       font-size: 20px;
@@ -306,37 +339,58 @@ body .espace_content {
         margin-right: 1em; }
 
 body .article_materiel {
+  box-shadow: 8px 8px 12px #aaa;
   display: flex;
-  padding: 2em; }
+  padding: 0;
+  margin-bottom: 1em; }
+  body .article_materiel h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    border-left: 15px solid #F18F01;
+    padding-left: 0.5em;
+    margin-bottom: 1em; }
   body .article_materiel article, body .article_materiel img {
     padding: 1em; }
   body .article_materiel img {
-    width: 90%;
-    height: 90%; }
+    width: 18em;
+    height: auto; }
 
 body .formation_atelier {
   margin: 2em 0; }
   body .formation_atelier article {
-    padding: 30px;
+    box-shadow: 8px 8px 12px #aaa;
     margin-bottom: 2em;
-    box-shadow: 8px 8px 12px #aaa; }
+    height: auto; }
     body .formation_atelier article a {
       text-decoration: none;
       color: #4C5760; }
     body .formation_atelier article figure img {
-      width: 90%;
-      height: 8em; }
-    body .formation_atelier article figure img:hover {
-      opacity: 0.5;
-      width: 100%; }
+      width: 100%;
+      height: auto; }
     body .formation_atelier article h3 {
       font-family: "Oswald", sans-serif;
-      font-size: 150%; }
+      font-size: 150%;
+      font-weight: 400;
+      border-left: 15px solid #F18F01;
+      padding-left: 0.5em;
+      border: none;
+      padding: 0 30px; }
     body .formation_atelier article p {
       font-size: 13px;
       padding-top: 1em; }
       body .formation_atelier article p i {
-        margin-right: 0.3em; }
+        margin-left: 30px; }
+  body .formation_atelier .article_formation {
+    min-height: 375px;
+    height: 375px;
+    position: relative;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out; }
+  body .formation_atelier .article_formation:hover {
+    transform: scale(1.1); }
 
 body .evenements .col-md-4,
 body .evenements .col-md-3,
@@ -346,44 +400,58 @@ body .evenements .col-md-3 {
   padding-left: 0; }
 body .evenements h2 {
   font-family: "Oswald", sans-serif;
+  font-size: 32px;
   font-weight: 400;
-  margin: 1.5em 1em; }
+  border-left: 15px solid #F18F01;
+  padding-left: 0.5em;
+  margin: 0 0 1em 0.5em; }
 body .evenements article {
   position: relative;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  position: relative;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
   body .evenements article a {
     text-decoration: none;
     font-family: "Oswald", sans-serif;
     font-size: 18px;
     color: #4C5760; }
   body .evenements article h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    border-left: 15px solid #F18F01;
+    padding-left: 0.5em;
     background: transparent;
+    border: none;
     position: absolute;
     width: 100%;
     left: 0;
     top: 33%; }
   body .evenements article img {
-    width: 90%;
+    width: 100%;
     height: 9em; }
 body .evenements article:hover {
-  background-color: #F18F01; }
+  background-color: #F18F01;
+  transform: scale(1.1); }
   body .evenements article:hover h3, body .evenements article:hover p {
     color: #fff; }
   body .evenements article:hover img:hover {
-    width: 100%;
-    background: #000000;
-    opacity: 0.1; }
+    opacity: 0.5; }
 
 body {
-  background-image: url(./static/img/tweed.png);
-  text-transform: capitalize;
-  font-family: "Lato", sans-serif;
-  font-size: medium; }
+  background-image: url(./static/img/tweed.png); }
   body .container {
+    background-color: #FAFAFF;
     padding-left: 0;
     padding-right: 0; }
   body main {
-    background-color: #FAFAFF; }
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    letter-spacing: 1px;
+    line-height: 2; }
     body main .col-md-9 {
       padding: 2em 4em; }
     body main .col-md-9 {
@@ -391,7 +459,7 @@ body {
     body main iframe {
       margin-left: 2em; }
 
-@media screen and (min-width: 768px) and (max-width: 1077px) {
+@media screen and (min-width: 768px) and (max-width: 1204px) {
   body header .navbar-header {
     float: none; }
   body header .navbar-toggle {
@@ -435,20 +503,21 @@ body {
     min-height: 32em; }
   body main .aside {
     padding: 0 1.3em;
-    margin-bottom: 4em; }
+    margin-bottom: 0; }
     body main .aside h4 {
-      padding-left: 1.3em; }
+      padding: 0 0 1em 1.3em;
+      margin: 0; }
     body main .aside ul {
       padding: 0;
       margin-left: 2em; }
     body main .aside a i {
       margin-bottom: 0; }
   body main .temoignages h2 {
-    padding: 0 0 0 2em;
-    margin: 2em 0 0 0; }
+    padding: 0 0 0 3em;
+    margin: 0; }
   body main .temoignages article {
     margin: 1.5em 4.5em; }
-  body .accuiel .facebook {
+  body .accueil .facebook {
     padding-left: 2em; } }
 @media screen and (max-width: 768px) {
   body header .navbar {
@@ -462,46 +531,63 @@ body {
   body header #menu-item-30 > a:hover {
     color: #F18F01;
     background-color: transparent; }
-  body main .col-md-9 {
-    padding: 0 1em; }
-  body main .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  body main .detail_formation article figure,
-  body main .espace_content article figure {
-    text-align: center; }
-    body main .detail_formation article figure img,
-    body main .espace_content article figure img {
-      float: none;
-      width: 90%;
-      height: 100%; }
-    body main .detail_formation article figure img:hover,
-    body main .espace_content article figure img:hover {
-      width: 100%;
-      height: 100%; }
-  body main .detail_formation article p,
-  body main .espace_content article p {
-    margin-top: 2em; }
-  body main .detail_formation article .horaires,
-  body main .espace_content article .horaires {
-    margin-top: 1em; }
-  body main .article_materiel {
-    flex-direction: column; }
-    body main .article_materiel figure {
-      order: 1; }
-  body main .temoignages h2 {
-    padding: 0 0 0 2em;
-    margin: 0; }
-  body main .temoignages article {
-    margin: 1.5em 4.5em; }
-  body main .aside {
-    padding-top: 0; }
-  body .accuiel .facebook {
+  body main {
+    letter-spacing: 0.5px;
+    line-height: 2; }
+    body main .col-md-9 {
+      padding: 0 1em; }
+    body main .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    body main .detail_formation article figure,
+    body main .espace_content article figure {
+      text-align: center; }
+      body main .detail_formation article figure img,
+      body main .espace_content article figure img {
+        float: none;
+        width: 90%;
+        height: 100%; }
+      body main .detail_formation article figure img:hover,
+      body main .espace_content article figure img:hover {
+        width: 100%;
+        height: 100%; }
+    body main .detail_formation article p .size-thumbnail:nth-child(1),
+    body main .espace_content article p .size-thumbnail:nth-child(1) {
+      margin-left: 0; }
+    body main .detail_formation article p,
+    body main .espace_content article p {
+      margin-top: 2em; }
+    body main .detail_formation article .horaires,
+    body main .espace_content article .horaires {
+      margin-top: 1em; }
+    body main .article_materiel {
+      flex-direction: column; }
+      body main .article_materiel figure {
+        order: 1; }
+    body main .formation_atelier .article_formation {
+      height: auto; }
+    body main .evenements article img {
+      opacity: 0.5; }
+    body main .evenements article h3 {
+      font-size: 32px; }
+    body main .temoignages h2 {
+      padding: 0 0 0 1em;
+      margin: 0; }
+    body main .temoignages article {
+      margin: 1.5em; }
+    body main .aside {
+      padding-top: 0; }
+  body .accueil .facebook iframe {
     padding-left: 2em; }
-  body .accuiel .partenaires img {
+  body .accueil .tiers_lieu article h2 {
+    padding-bottom: 0.5em;
+    margin-top: 0; }
+  body .accueil .partenaires img {
     width: 6em;
-    height: 4em; }
+    height: 5em; }
+  body .accueil .derniers_articles article {
+    padding: 0; }
   body footer form input {
     width: 15em; } }
 

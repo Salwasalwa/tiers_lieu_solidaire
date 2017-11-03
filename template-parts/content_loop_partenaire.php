@@ -11,7 +11,7 @@
         <div class="col-md-12 col-sm-4 ">
             <article>
                 <p>
-                    <a href="<?php echo get_post_meta($post->ID, 'siteweb', true) ?>">
+                    <a href="<?php echo get_post_meta($post->ID, 'siteweb', true) ?>" target="_blank">
                         <?php the_post_thumbnail(); ?>
                     </a>
                 </p>

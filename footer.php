@@ -27,7 +27,10 @@
             </div>
             <div class="col-sm-6 col-md-3">
                 <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>Liens Utils</h3>
-                <?php wp_nav_menu("liens_utils");?>
+                <?php wp_nav_menu(array(
+                    'menu' => 'liens_utils'
+                ));?>
+
             </div>
             <div class="col-sm-12 col-md-3 partenaire">
                 <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>Partenaire</h3>
@@ -40,34 +43,23 @@
                 <form method="post">
                    <input type="email" name="Email" placeholder="Votre E-Mail">
                    <?php
-                       if (isset($_POST['Email'])) {
+                       if (!isset($_POST['Email'])) {
                            $wpdb->insert(
                                'Emails',  array(   'Email' => $_POST['Email'])
                             );
                        } ?>
                    <button type="submit" name="button">OK</button>
                 </form>
-
+        
                 <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>follow us</h3>
+                <?php wp_nav_menu(array(
+                    'menu' => 'social'
+                ));?>
 
-                <ul id="nav_social">
-                    <li>
-                    <a href="#" target="blank"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                    <a href="#" target="blank"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                    <a href="#" target="blank"><i class="fa fa-google-plus-official"></i></a>
-                    </li>
-                    <li>
-                    <a href="#" target="blank"><i class="fa fa-youtube-play"></i></a>
-                    </li>
-                </ul>
             </div>
         </div>
         <div class="row mentions">
-            <p class="text-center">© 2017 <a href="/project_tiers_lieu/tiers_lieu_solidaire_wordpress/index.php/mention-legales/">Mentions Légales</a></p>
+            <p class="text-center">© 2017 <a href="<?php bloginfo('url'); ?>/index.php/mention-legales/">Mentions Légales</a></p>
         </div>
     </footer>
 </div>

@@ -1,15 +1,24 @@
 body {
     // Témoignages
     .temoignages {
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+        margin-top: 1em;
+
         .col-md-12,
         .col-sm-6 {
             padding-left: 0;
         }
+
         h2 {
-            font-family: $font-title;
-            font-weight: 400;
+            @include titre(24px, 400);
+            border: none;
             padding: 1em 0 0 0;
             margin-top: 2em;
+        }
+
+        blockquote {
+            font-size: 14.5px !important;
         }
 
         article {

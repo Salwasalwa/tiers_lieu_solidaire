@@ -4,9 +4,10 @@ body {
         margin: 2em 0;
 
         article {
-            padding: 30px;
-            margin-bottom: 2em;
             box-shadow: 8px 8px 12px #aaa;
+            margin-bottom: 2em;
+            height: auto;
+
 
             a {
                 text-decoration: none;
@@ -15,29 +16,35 @@ body {
 
             figure {
                 img {
-                    width: 90%;
-                    height: 8em;
-                }
-
-                img:hover {
-                    opacity: 0.5;
                     width: 100%;
+                    height: auto;
                 }
             }
 
             h3 {
-                font-family: $font-title;
-                font-size: 150%;
+                @include titre(150%, 400);
+                border: none;
+                padding: 0 30px;
             }
 
             p {
                 font-size: 13px;
                 padding-top: 1em;
-                i {
 
-                    margin-right: 0.3em;
+                i {
+                    margin-left: 30px;
                 }
             }
+        }
+
+        .article_formation {
+            min-height: 375px;
+            height: 375px;
+            @include transition;
+        }
+
+        .article_formation:hover {
+            transform: scale(1.1);
         }
     }
 }
