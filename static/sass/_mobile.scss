@@ -26,7 +26,7 @@ body {
             padding: 0 1em;
         }
 
-        // Evenements, Formation & Atelier, derniers articles, partenaire.
+        //Formation & Atelier, derniers articles, partenaire.
         .flex {
             display: flex;
             flex-wrap: wrap;
@@ -64,6 +64,10 @@ body {
                 .horaires {
                     margin-top: 1em;
                 }
+
+            }
+            .em-location-map-container {
+                width: 100% !important;
             }
         }
 
@@ -82,16 +86,28 @@ body {
         }
 
         .evenements {
+            h2 {
+                margin-top: 2em;
+            }
+
             article {
                 img {
                     opacity: 0.5;
                 }
 
                 h3 {
-                    font-size: 32px;
+                    font-size: 24px;
                 }
             }
+
+            // Evenements avec images et titre.
+            div > ul:nth-child(1) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
+
         .temoignages {
             h2 {
                 padding: 0 0 0 1em;
@@ -100,6 +116,11 @@ body {
 
             article {
                 margin: 1.5em;
+            }
+
+            .agenda {
+                margin: 0em 1.5em;
+
             }
         }
 
@@ -115,6 +136,12 @@ body {
             }
         }
 
+        // change order de (Le Tiers Lieu Solidaire, Témoignages, partenaires)
+        .orderindex {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
         .tiers_lieu {
             article {
                 h2 {
@@ -125,6 +152,8 @@ body {
         }
 
         .partenaires {
+            padding-top: 2em;
+
             img {
                 width: 6em;
                 height: 5em;

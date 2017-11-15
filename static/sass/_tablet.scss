@@ -8,22 +8,46 @@ body {
             margin-top: 2em;
         }
 
-        .partenaires {
-            min-height: 32em;
+        .evenements {
+            article {
+                img {
+                    opacity: 0.5;
+                    width: 15em;
+                }
+
+                h3 {
+                    font-size: 24px;
+                }
+            }
         }
 
         .aside {
             padding: 0 1.3em;
             margin-bottom: 0;
 
+            div:nth-child(1) > h4:nth-child(1) {
+                margin-top: 0;
+            }
+
+            // agenda
+            div:nth-child(3) > h4:nth-child(1) {
+                margin: 1em 0;
+            }
             h4 {
                 padding: 0 0 1em 1.3em;
                 margin: 0;
             }
 
+
             ul {
                 padding: 0;
                 margin-left: 2em;
+            }
+
+            //ul de evenements titre aside
+            div:nth-child(5) > ul:nth-child(1),
+            .evenements_titre_side {
+                margin-left: 0;
             }
 
             a {
@@ -42,12 +66,22 @@ body {
             article {
                 margin: 1.5em 4.5em;
             }
+            .agenda {
+                margin: 2em 0 2em 3em;
+                padding-left: 1em;
+            }
         }
     }
 
     .accueil {
         .facebook {
             padding-left: 2em;
+        }
+
+        // change order de (Le Tiers Lieu Solidaire, Témoignages, partenaires)
+        .orderindex {
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 }

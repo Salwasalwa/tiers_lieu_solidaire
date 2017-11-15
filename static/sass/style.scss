@@ -49,15 +49,10 @@ body {
         .col-md-9 {
             margin: 2em 0;
         }
-
-        //Agenda
-        iframe {
-            margin-left: 2em;
-        }
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1204px) {
+@media screen and (min-width: 768px) and (max-width: 1230px) {
     @import "tabletNavBar";
 }
 

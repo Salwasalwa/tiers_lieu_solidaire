@@ -1,13 +1,14 @@
 <?php
     /*template name: page espace*/
     /* The template used for displaying page content
+        Salle Multimédia.
         Co-Working
-        FabLab
         Espace Fablab
         Média-Lab
+        Maison Digitale
         À propos
         Mention Légales
-        Maison Digitale
+        
         template-parts-> content_loop_post.
     */
 ?>
@@ -20,7 +21,7 @@ get_header();
             <!-- Page Salle Multimedia -->
             <div class="row hidden-xs">
                 <div class="col-md-12 img_espace">
-                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/tiers.jpg" alt="salle_multimedia">
+                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/tiers.png" alt="salle_multimedia">
                 </div>
             </div>
         <?php elseif (get_the_ID()== 10 ): ?>

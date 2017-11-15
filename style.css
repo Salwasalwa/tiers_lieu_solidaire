@@ -156,6 +156,14 @@ body .aside {
   line-height: 1.5;
   text-align: left;
   padding-top: 1em; }
+  body .aside div:nth-child(1) > h4:nth-child(1) {
+    margin-top: 2em; }
+  body .aside .agenda {
+    margin-bottom: 2em; }
+    body .aside .agenda a,
+    body .aside .agenda a:hover {
+      text-decoration: none;
+      color: #F18F01; }
   body .aside h4 {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -164,8 +172,7 @@ body .aside {
     padding-left: 0.5em;
     color: #4C5760;
     border: none;
-    padding: 1em 0 0 0;
-    margin-top: 2em; }
+    padding: 1em 0 0 0; }
     body .aside h4 a {
       text-decoration: none;
       color: #4C5760; }
@@ -210,6 +217,24 @@ body .temoignages {
     margin: 2em 0.5em; }
     body .temoignages article .temoignage_nom i {
       margin-right: 0.5em; }
+  body .temoignages .agenda {
+    margin: 2em 0; }
+    body .temoignages .agenda h4 {
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      border-left: 15px solid #F18F01;
+      padding-left: 0.5em;
+      border: none;
+      padding: 0;
+      margin: 2em 0 1em 0; }
+      body .temoignages .agenda h4 a {
+        text-decoration: none;
+        color: black; }
+    body .temoignages .agenda .em-calendar a,
+    body .temoignages .agenda .em-calendar a:hover {
+      text-decoration: none;
+      color: #F18F01; }
 
 body .slide_header {
   border-style: solid;
@@ -245,21 +270,22 @@ body .accueil {
     margin-left: 0;
     margin-right: 0; }
   body .accueil .facebook {
-    background-color: #FAFAFF;
+    text-align: center;
     max-height: 265px;
+    min-height: 265px;
+    background-color: #FAFAFF;
     border-bottom: 15px solid;
-    border-image: url(/static/img/tweed.png); }
-    body .accueil .facebook iframe {
-      width: 100%;
-      padding-top: 1.4em;
-      height: auto; }
+    border-image: url(/static/img/tweed.png);
+    padding-top: 1.4em; }
+    body .accueil .facebook .widgettitle {
+      display: none; }
   body .accueil .tiers_lieu {
     font-family: "Source Sans Pro", sans-serif;
     font-style: italic;
-    box-shadow: -5px -6px 7px 5px #F18F01, 0 5px 5px -5px #F18F01;
+    box-shadow: 8px 8px 12px #aaa;
     margin-top: 4em; }
     body .accueil .tiers_lieu article {
-      padding-bottom: 4em;
+      padding: 1em 0 4em 0;
       margin: 2em; }
       body .accueil .tiers_lieu article h2 {
         font-family: "Oswald", sans-serif;
@@ -268,9 +294,7 @@ body .accueil {
         border-left: 15px solid #F18F01;
         padding-left: 0.5em;
         text-align: center;
-        border: none;
-        padding-top: 1em;
-        margin-top: 2em; }
+        margin-bottom: 1em; }
   body .accueil .derniers_articles {
     width: 90%;
     padding-top: 4em;
@@ -337,6 +361,46 @@ body .espace_content {
       body .detail_formation article .horaires i,
       body .espace_content article .horaires i {
         margin-right: 1em; }
+    body .detail_formation article select,
+    body .detail_formation article input,
+    body .espace_content article select,
+    body .espace_content article input {
+      text-transform: uppercase;
+      color: white;
+      background-color: #F18F01;
+      border-radius: 5px;
+      border: 1px solid #F18F01;
+      padding: 0.5em 1em;
+      font-size: 15px;
+      margin-bottom: 1em; }
+    body .detail_formation article .css-events-list,
+    body .espace_content article .css-events-list {
+      margin-bottom: 1.5em;
+      text-align: left; }
+      body .detail_formation article .css-events-list .events-table .event-time,
+      body .espace_content article .css-events-list .events-table .event-time {
+        width: 45%; }
+      body .detail_formation article .css-events-list .events-table tbody,
+      body .espace_content article .css-events-list .events-table tbody {
+        border: 1px solid black;
+        border-left: none;
+        border-right: none; }
+        body .detail_formation article .css-events-list .events-table tbody tr td,
+        body .espace_content article .css-events-list .events-table tbody tr td {
+          border-bottom: 1px solid black; }
+          body .detail_formation article .css-events-list .events-table tbody tr td a,
+          body .detail_formation article .css-events-list .events-table tbody tr td a:hover,
+          body .espace_content article .css-events-list .events-table tbody tr td a,
+          body .espace_content article .css-events-list .events-table tbody tr td a:hover {
+            text-decoration: none;
+            color: #4C5760; }
+          body .detail_formation article .css-events-list .events-table tbody tr td a:hover,
+          body .espace_content article .css-events-list .events-table tbody tr td a:hover {
+            color: #F18F01; }
+      body .detail_formation article .css-events-list .em-pagination,
+      body .espace_content article .css-events-list .em-pagination {
+        margin: 1em 0;
+        text-align: center; }
 
 body .article_materiel {
   box-shadow: 8px 8px 12px #aaa;
@@ -375,7 +439,11 @@ body .formation_atelier {
       border-left: 15px solid #F18F01;
       padding-left: 0.5em;
       border: none;
-      padding: 0 30px; }
+      padding: 0 30px;
+      max-height: 6em;
+      line-height: 1em;
+      text-overflow: ellipsis;
+      overflow: hidden; }
     body .formation_atelier article p {
       font-size: 13px;
       padding-top: 1em; }
@@ -396,6 +464,10 @@ body .evenements .col-md-4,
 body .evenements .col-md-3,
 body .evenements .col-sm-6 {
   padding-right: 0; }
+body .evenements div > ul:nth-child(1) {
+  padding-left: 0; }
+body .evenements ul {
+  list-style-type: none; }
 body .evenements .col-md-3 {
   padding-left: 0; }
 body .evenements h2 {
@@ -429,7 +501,10 @@ body .evenements article {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 33%; }
+    top: 33%;
+    height: 2em;
+    text-overflow: ellipsis;
+    overflow: hidden; }
   body .evenements article img {
     width: 100%;
     height: 9em; }
@@ -456,10 +531,8 @@ body {
       padding: 2em 4em; }
     body main .col-md-9 {
       margin: 2em 0; }
-    body main iframe {
-      margin-left: 2em; }
 
-@media screen and (min-width: 768px) and (max-width: 1204px) {
+@media screen and (min-width: 768px) and (max-width: 1230px) {
   body header .navbar-header {
     float: none; }
   body header .navbar-toggle {
@@ -499,17 +572,27 @@ body {
     margin-bottom: 0; }
   body main .horaires {
     margin-top: 2em; }
-  body main .partenaires {
-    min-height: 32em; }
+  body main .evenements article img {
+    opacity: 0.5;
+    width: 15em; }
+  body main .evenements article h3 {
+    font-size: 24px; }
   body main .aside {
     padding: 0 1.3em;
     margin-bottom: 0; }
+    body main .aside div:nth-child(1) > h4:nth-child(1) {
+      margin-top: 0; }
+    body main .aside div:nth-child(3) > h4:nth-child(1) {
+      margin: 1em 0; }
     body main .aside h4 {
       padding: 0 0 1em 1.3em;
       margin: 0; }
     body main .aside ul {
       padding: 0;
       margin-left: 2em; }
+    body main .aside div:nth-child(5) > ul:nth-child(1),
+    body main .aside .evenements_titre_side {
+      margin-left: 0; }
     body main .aside a i {
       margin-bottom: 0; }
   body main .temoignages h2 {
@@ -517,8 +600,14 @@ body {
     margin: 0; }
   body main .temoignages article {
     margin: 1.5em 4.5em; }
+  body main .temoignages .agenda {
+    margin: 2em 0 2em 3em;
+    padding-left: 1em; }
   body .accueil .facebook {
-    padding-left: 2em; } }
+    padding-left: 2em; }
+  body .accueil .orderindex {
+    display: flex;
+    flex-direction: column-reverse; } }
 @media screen and (max-width: 768px) {
   body header .navbar {
     padding-left: 1em;
@@ -561,31 +650,47 @@ body {
     body main .detail_formation article .horaires,
     body main .espace_content article .horaires {
       margin-top: 1em; }
+    body main .detail_formation .em-location-map-container,
+    body main .espace_content .em-location-map-container {
+      width: 100% !important; }
     body main .article_materiel {
       flex-direction: column; }
       body main .article_materiel figure {
         order: 1; }
     body main .formation_atelier .article_formation {
       height: auto; }
+    body main .evenements h2 {
+      margin-top: 2em; }
     body main .evenements article img {
       opacity: 0.5; }
     body main .evenements article h3 {
-      font-size: 32px; }
+      font-size: 24px; }
+    body main .evenements div > ul:nth-child(1) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
     body main .temoignages h2 {
       padding: 0 0 0 1em;
       margin: 0; }
     body main .temoignages article {
       margin: 1.5em; }
+    body main .temoignages .agenda {
+      margin: 0em 1.5em; }
     body main .aside {
       padding-top: 0; }
   body .accueil .facebook iframe {
     padding-left: 2em; }
+  body .accueil .orderindex {
+    display: flex;
+    flex-direction: column-reverse; }
   body .accueil .tiers_lieu article h2 {
     padding-bottom: 0.5em;
     margin-top: 0; }
-  body .accueil .partenaires img {
-    width: 6em;
-    height: 5em; }
+  body .accueil .partenaires {
+    padding-top: 2em; }
+    body .accueil .partenaires img {
+      width: 6em;
+      height: 5em; }
   body .accueil .derniers_articles article {
     padding: 0; }
   body footer form input {

@@ -27,7 +27,16 @@ get_header();
             <div class="col-md-3 col-sm-12 temoignages text-justify">
                 <h2>Témoignages</h2>
                 <?php get_template_part(    'template-parts/content_loop_temoignages');?>
+
+                <div class="agenda">
+                    <h4><a href="<?php bloginfo('url');?>/index.php/agenda/">Agenda</a></h4>
+
+                    <?php dynamic_sidebar( 'agenda' ); ?>
+        
+                </div>
             </div>
+            <div class="col-md-12 col-sm-6">
+        	</div>
         </div>
     </main>
 </div>

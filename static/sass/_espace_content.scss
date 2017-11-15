@@ -4,7 +4,8 @@ body {
     // detail événement
     // A propos
     // Mentions Légales
-    
+    // Agenda
+
     .detail_formation,
     .espace_content {
         margin-top: 0.5em;
@@ -52,6 +53,51 @@ body {
 
                 i {
                     margin-right: 1em;
+                }
+            }
+
+            select,
+            input {
+                @include buttont ($color-flash, $color-flash);
+                font-size: 15px;
+                margin-bottom: 1em;
+            }
+
+            //Agenda
+            .css-events-list {
+                margin-bottom: 1.5em;
+                text-align: left;
+
+                .events-table {
+                    .event-time {
+                        width: 45%;
+                    }
+
+                    tbody {
+                        border: 1px solid black;
+                        border-left: none;
+                        border-right: none;
+                        tr {
+                            td {
+                                border-bottom: 1px solid black;
+
+                                a,
+                                a:hover {
+                                    text-decoration: none;
+                                    color: $color-dark;
+                                }
+
+                                a:hover {
+                                    color: $color-flash;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .em-pagination {
+                    margin: 1em 0;
+                    text-align: center;
                 }
             }
         }

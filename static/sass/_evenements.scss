@@ -4,8 +4,16 @@ body {
 
         .col-md-4,
         .col-md-3,
-        .col-sm-6 {
+        .col-sm-6{
             padding-right: 0;
+        }
+
+        div > ul:nth-child(1) {
+            padding-left: 0;
+        }
+
+        ul {
+            list-style-type: none;
         }
 
         .col-md-3 {
@@ -15,6 +23,7 @@ body {
         h2 {
             @include titre(32px, 400);
             margin: 0 0 1em 0.5em;
+
         }
 
         article {
@@ -37,6 +46,9 @@ body {
                 width: 100%;
                 left: 0;
                 top: 33%;
+                height: 2em;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
 
             img {

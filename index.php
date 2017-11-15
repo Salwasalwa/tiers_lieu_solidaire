@@ -57,7 +57,7 @@
                 </a>
             </div>
             <main>
-                <div class="row">
+                <div class="row orderindex">
                     <div class="col-md-4 partenaires">
                         <?php get_template_part( 'template-parts/content_loop_partenaire');?>
                     </div>
@@ -75,16 +75,17 @@
             </main>
         </div>
         <div class="col-md-3 nopadding">
-            <div class="facebook ">
-                <iframe name="f2b7e3377692d4" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" style="border: medium none; visibility: visible; width: 100%; height: 299px;" src="https://www.facebook.com/v2.0/plugins/like_box.php?app_id=488390501239538&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FK6RbmRhg2m2.js%3Fversion%3D42%23cb%3Dfd9b123aa13738%26domain%3D127.0.0.1%26origin%3Dhttp%253A%252F%252F127.0.0.1%253A8080%252Ff26ad644901cdbe%26relation%3Dparent.parent&amp;container_width=575&amp;force_wall=false&amp;height=560&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FWeblizar%2F1440510482872657&amp;locale=en_US&amp;sdk=joey&amp;show_border=true&amp;show_faces=true&amp;stream=false&amp;width=292" width="100%" height="299px" frameborder="0"></iframe>
-
+            <div class="facebook">
+                <?php dynamic_sidebar( 'home_facebook' ); ?>
             </div>
             <main>
                 <div class="row">
 
                     <div class="evenements text-center">
                         <!-- Derniers articles -->
-                        <?php get_template_part( 'template-parts/content_loop_derniersarticles');?>
+                        <div class="derniers_articles flex">
+                            <?php dynamic_sidebar( 'derniers_articles_accuiel' ); ?>
+                        </div>
                     </div>
                 </div>
 

@@ -17,6 +17,7 @@ foreach ($posts as $post) {
             echo get_post_meta($post->ID, 'Horaires', true);
             ?>
         </p>
+
     </article>
 
 <?php } ?>

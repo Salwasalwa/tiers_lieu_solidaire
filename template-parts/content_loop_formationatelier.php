@@ -12,7 +12,7 @@ foreach ($posts as $post) {
                     <?php the_post_thumbnail(); ?>
                 </figure>
                 <h3><?php the_title(); ?></h3>
-                <p>
+                <p class="calendar">
                     <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                     <?php
                     echo get_post_meta($post->ID, 'Horaires', true);

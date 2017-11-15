@@ -1,13 +1,9 @@
 <div class="container">
     <footer>
-        <div id="footer-sidebar1">
-            <?php if ( !function_exists('dynamic_sidebar') ||   !dynamic_sidebar(1) ) : ?>
-            <?php endif; ?>
-        </div>
         <div class="row ">
             <div class="col-sm-6 col-md-3">
                 <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>Contact</h3>
-
+                
                 <?php
                     $args = array('category_name' => "contact",
                             'posts_per_page' => 1
@@ -43,15 +39,16 @@
                 <form method="post">
                    <input type="email" name="Email" placeholder="Votre E-Mail">
                    <?php
-                       if (!isset($_POST['Email'])) {
+                       if (isset($_POST['Email'])) {
                            $wpdb->insert(
                                'Emails',  array(   'Email' => $_POST['Email'])
                             );
                        } ?>
                    <button type="submit" name="button">OK</button>
+
                 </form>
-        
-                <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>follow us</h3>
+
+                <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>Suivez nous</h3>
                 <?php wp_nav_menu(array(
                     'menu' => 'social'
                 ));?>

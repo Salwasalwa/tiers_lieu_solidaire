@@ -32,5 +32,28 @@ body {
                 }
             }
         }
+
+        .agenda {
+            margin: 2em 0;
+            h4 {
+                @include titre(20px, 700);
+                border: none;
+                padding: 0;
+                margin: 2em 0 1em 0;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .em-calendar {
+                a,
+                a:hover {
+                    text-decoration: none;
+                    color: $color-flash;
+                }
+            }
+        }
     }
 }
