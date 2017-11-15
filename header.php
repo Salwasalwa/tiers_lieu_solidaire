@@ -16,7 +16,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <header class="row">
             <?php require_once('wp-bootstrap-navwalker.php'); ?>
 
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">

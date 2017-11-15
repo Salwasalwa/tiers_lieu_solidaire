@@ -64,4 +64,19 @@ function add_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
+
+function cutString($string, $start, $length, $endStr = '[&hellip]'){
+	// si la taille de la chaine est inférieure ou égale à celle
+	// attendue on la retourne telle qu'elle
+	if( strlen( $string ) <= $length ) return $string;
+	// autrement on continue
+	// permet de couper la phrase aux caractères définis tout
+	// en prenant en compte la taille de votre $endStr et en
+	// re-précisant l'encodage du contenu récupéré
+	$str = mb_substr( $string, $start, $length - strlen( $endStr ) + 1, 'UTF-8');
+	// retourne la chaîne coupée avant la dernière espace rencontrée
+
+	// à laquelle s'ajoute notre $endStr
+	return substr( $str, 0, strrpos( $str,' ') ).$endStr;
+};
 ?>

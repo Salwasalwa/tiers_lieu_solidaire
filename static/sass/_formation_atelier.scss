@@ -12,6 +12,12 @@ body {
             a {
                 text-decoration: none;
                 color: $color-dark;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 375px;
+                height: 375px;
+
             }
 
             figure {
@@ -25,26 +31,21 @@ body {
                 @include titre(150%, 400);
                 border: none;
                 padding: 0 30px;
-                max-height: 6em;
-                line-height: 1em;
-                text-overflow: ellipsis;
-                overflow: hidden;
             }
 
-            p {
-                font-size: 13px;
-                padding-top: 1em;
+            .calendar {
+                p {
+                    font-size: 13px;
+                    padding-top: 1em;
 
-                i {
-                    margin-left: 30px;
+                    i {
+                        margin-left: 30px;
+                    }
                 }
             }
-
         }
 
         .article_formation {
-            min-height: 375px;
-            height: 375px;
             @include transition;
         }
 

@@ -11,13 +11,19 @@ foreach ($posts as $post) {
                 <figure class="">
                     <?php the_post_thumbnail(); ?>
                 </figure>
-                <h3><?php the_title(); ?></h3>
-                <p class="calendar">
-                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-                    <?php
-                    echo get_post_meta($post->ID, 'Horaires', true);
-                    ?>
-                </p>
+
+                <h3>
+                    <?php echo $txt = cutString(get_the_title(), 0, 30, '...'); ?>
+                </h3>
+                <div class="calendar">
+                    <p class="">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        <?php
+                        echo get_post_meta($post->ID, 'Horaires', true);
+                        ?>
+                    </p>
+
+                </div>
             </a>
         </article>
     </div>

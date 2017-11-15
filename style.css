@@ -428,7 +428,12 @@ body .formation_atelier {
     height: auto; }
     body .formation_atelier article a {
       text-decoration: none;
-      color: #4C5760; }
+      color: #4C5760;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 375px;
+      height: 375px; }
     body .formation_atelier article figure img {
       width: 100%;
       height: auto; }
@@ -439,19 +444,13 @@ body .formation_atelier {
       border-left: 15px solid #F18F01;
       padding-left: 0.5em;
       border: none;
-      padding: 0 30px;
-      max-height: 6em;
-      line-height: 1em;
-      text-overflow: ellipsis;
-      overflow: hidden; }
-    body .formation_atelier article p {
+      padding: 0 30px; }
+    body .formation_atelier article .calendar p {
       font-size: 13px;
       padding-top: 1em; }
-      body .formation_atelier article p i {
+      body .formation_atelier article .calendar p i {
         margin-left: 30px; }
   body .formation_atelier .article_formation {
-    min-height: 375px;
-    height: 375px;
     position: relative;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
@@ -532,7 +531,10 @@ body {
     body main .col-md-9 {
       margin: 2em 0; }
 
-@media screen and (min-width: 768px) and (max-width: 1230px) {
+@media (min-width: 1500px) {
+  body header .navbar {
+    padding: 0 10%; } }
+@media screen and (min-width: 768px) and (max-width: 1240px) {
   body header .navbar-header {
     float: none; }
   body header .navbar-toggle {
@@ -657,7 +659,7 @@ body {
       flex-direction: column; }
       body main .article_materiel figure {
         order: 1; }
-    body main .formation_atelier .article_formation {
+    body main .formation_atelier a {
       height: auto; }
     body main .evenements h2 {
       margin-top: 2em; }
