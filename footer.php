@@ -3,7 +3,7 @@
         <div class="row ">
             <div class="col-sm-6 col-md-3">
                 <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>Contact</h3>
-                
+
                 <?php
                     $args = array('category_name' => "contact",
                             'posts_per_page' => 1
@@ -36,22 +36,13 @@
             <div class="col-sm-6 col-md-3">
                 <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>Newsletter</h3>
 
-                <form method="post">
-                   <input type="email" name="Email" placeholder="Votre E-Mail">
-                   <?php
-                       if (isset($_POST['Email'])) {
-                           $wpdb->insert(
-                               'Emails',  array(   'Email' => $_POST['Email'])
-                            );
-                       } ?>
-                   <button type="submit" name="button">OK</button>
-
-                </form>
-
+                <?php get_template_part( 'template-parts/content_loop_newsletter');?>
                 <h3><i class="fa fa-chevron-right" aria-hidden="true"></i>Suivez nous</h3>
                 <?php wp_nav_menu(array(
                     'menu' => 'social'
                 ));?>
+
+                <h3><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="<?php bloginfo('url');?>/index.php/agenda/">Agenda</a></h3>
 
             </div>
         </div>
@@ -60,5 +51,6 @@
         </div>
     </footer>
 </div>
+<?php wp_footer() ?>
 </body>
 </html>

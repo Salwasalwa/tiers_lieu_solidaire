@@ -7,8 +7,9 @@
         Média-Lab
         Maison Digitale
         À propos
+        Agenda
         Mention Légales
-        
+
         template-parts-> content_loop_post.
     */
 ?>
