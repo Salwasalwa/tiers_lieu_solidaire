@@ -72,6 +72,10 @@ body footer {
     body footer h3 i {
       color: #F18F01;
       margin-right: 0.7em; }
+    body footer h3 a,
+    body footer h3 a:hover {
+      text-decoration: none;
+      color: white; }
   body footer p {
     padding-left: 1.7em; }
     body footer p i {

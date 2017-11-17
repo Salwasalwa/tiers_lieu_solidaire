@@ -17,7 +17,7 @@
 	    ));
 	?>
 	<div class="col-md-12 col-sm-6">
-		<h4>Formation & Atelier</h4>
+		<h4><a href="<?php 	bloginfo('url');?>/index.php/formation-atelier/">Formation & Atelier</a></h4>
 		<ul>
 			<?php while ($recentPosts->have_posts()): $recentPosts->the_post();?>
 	            <a href="<?php the_permalink(); ?>"><li><?php the_title(); ?></li></a>
