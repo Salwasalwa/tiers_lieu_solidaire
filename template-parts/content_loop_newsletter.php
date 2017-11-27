@@ -7,12 +7,15 @@
                'Emails',  array('Email' => $_POST['Email'])
 
             );
-
+            // Ajouter l’e-mail dans la table emails.
+            // Je vérifie c’est pas inscrire
             if ($_POST['verification']==0){
                 $email = $_POST['Email'];
 
                 $message = 'Pour valider votre inscription à la newsletter de Tiers Lieu Solidaire, <a href="'.$url.'/index.php/inscription/?verif=1&Email='.$email.'">cliquez ici</a>.';
-
+                // 0 → pas vérifie.
+                // 1 → vérifie.
+                // la variable verif=1 pour change le valeur de champ de 0 a 1 -> ‘verification’  et la variable Email qui contiens l’e-mail pour faire l’inscription
 
                 $destinataire = $email;
                 $objet = "Inscription à la newsletter de Tiers Lieu Solidaire" ;
@@ -29,7 +32,7 @@
                     echo "Pour valider votre inscription, veuillez cliquer sur le lien dans l'e-mail que nous venons de vous envoyer.";
                 }
             }
-       } ?>
+        } ?>
    <button type="submit" name="button">OK</button>
 
 </form>

@@ -2,7 +2,7 @@
     $args = array(
         'category_name' => "materiel",
         'order' => 'ASC',
-        'posts_per_page'   => 20,
+        'posts_per_page'   => 30,
     );
     $posts = get_posts($args);
     $cont = 0;

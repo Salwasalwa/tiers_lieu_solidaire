@@ -14,6 +14,8 @@ foreach ($posts as $post) {
 
                 <h3>
                     <?php echo $txt = cutString(get_the_title(), 0, 30, '...'); ?>
+                    <!-- j’ai appelé a la function ‘cutString’
+                    Comme maximo 30 caracter de titre et après ajouter trois points c’est superior. -->
                 </h3>
                 <div class="calendar">
                     <p class="">

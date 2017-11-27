@@ -308,14 +308,16 @@ body .accueil {
     padding-top: 4em; }
     body .accueil .partenaires img {
       width: 8em;
-      height: 7em; }
+      height: auto; }
   body .accueil .nopadding {
     padding-left: 0;
     padding-right: 0; }
 
 body .img_espace img {
-  width: 99.999999%;
-  max-height: 350px; }
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  overflow: hidden; }
 
 body .detail_formation,
 body .espace_content {
@@ -696,7 +698,7 @@ body {
     padding-top: 2em; }
     body .accueil .partenaires img {
       width: 6em;
-      height: 5em; }
+      height: auto; }
   body .accueil .derniers_articles article {
     padding: 0; }
   body footer form input {

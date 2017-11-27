@@ -16,7 +16,7 @@ function arphabet_widgets_init() {
 		'after_widget'  => '</div>'
 	) );
 
-	// Les événements de la page événments
+	// Les événements de la page événements
 	register_sidebar( array(
 		'name'          => 'Page Evénements',
 		'id'            => 'home_eventbrite',
@@ -24,7 +24,7 @@ function arphabet_widgets_init() {
 		'after_widget'  => '</div>'
 	) );
 
-	//derniers articles (événments) Page accuiel (titre/image/date)
+	//derniers articles (événements) Page accuiel (titre/image/date)
 	register_sidebar( array(
 		'name'          => 'Derniers Articles Accuiel',
 		'id'            => 'derniers_articles_accuiel',
@@ -40,6 +40,7 @@ function arphabet_widgets_init() {
 		'after_widget'  => '</div>'
 	) );
 
+	//Agenda calendrier aside
 	register_sidebar( array(
 		'name'          => 'Agenda',
 		'id'            => 'agenda',

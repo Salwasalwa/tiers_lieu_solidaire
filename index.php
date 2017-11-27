@@ -16,7 +16,7 @@
                         <div class="mllorange">
                             <div class=" flex_img">
                                 <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/tiersLieu.JPG" alt="First slide">
-                                <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/tiers.jpg" alt="First slide">
+                                <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/tiers.jpg" alt="First slide" width="700px" height="300px">
                             </div>
                         </div>
                         <div class="carousel-caption">
@@ -28,7 +28,7 @@
                     <div class="item">
                         <div class="flex_img">
                             <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/12.jpeg" alt="Second slide">
-                            <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/ partenaire/logo-orange.png" alt="Second slide">
+                            <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/ partenaire/logo-orange.png" alt="Second slide" width="700px" height="300px">
                         </div>
                         <div class="carousel-caption">
                             <h3>Second slide</h3>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/10.jpg" alt="Third slide">
+                        <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static/img/10.jpg" alt="Third slide" width="700px" height="300px">
                         <div class="carousel-caption">
                             <h3>Third slide</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
